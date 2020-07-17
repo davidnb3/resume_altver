@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://kit.fontawesome.com/e988a1ca9d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="David's CV, education and experiences on one resume">
+    <title>David's Resume</title>
+  </head>
+  <body>
+    <div class='page-container'>
+      <aside>
+        <img src="profile-picture.jfif" alt="Picture of David being happy">
+        <section>
+          <h2>About Me</h2>
+          <p>Very Open minded human being with a pleasant personality, passionate about all sciences and tech, seeking for an innovative career change. Having experienced different jobs and studied many different topics, I decided to continue educating myself, to be able to work in a field that I enjoy and to build up a good life in the coming years. That’s why I chose to follow the web developer path on Openclassrooms, to which I can also successfully integrate my communication and analytical skills from my previous experiences.</p>
+        </section>
+        <section>
+          <div class="contact-details">
+            <p>Luxembourg</p>
+            <p>+352 621 697 209</p>
+            <p>david.mario.pieri@gmail.com</p>
+            <p>References available upon request</p>
+          </div>
+          <div class="contact-details">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/david-pieri-313a39197/" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a></li>
+              <li><a href="https://github.com/davidnb3" target="_blank"><span class="fab fa-github-square fa-2x"></span></a></li>
+              <li><a href="https://soundcloud.com/kosmicaldnb" target="_blank"><span class="fab fa-soundcloud fa-2x"></span></a></li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+      <main>
+        <header>
+          <h1><strong>DAVID</strong> PIERI</h1>
+          <h2>Freelance Web Developer</h2>
+        </header>
+        <div class='flex-container'>
+          <h3 onclick="toggleEducation()" class='toggle'><span class="fas fa-graduation-cap"></span>Education</h3>
+          <h3 onclick="toggleWork()" class="toggle">Experience<span class="fas fa-suitcase"></span></h3>
+        </div>
+        <div id="education" style="display: block;" class="container">
+          <div>
+            <section class="container-details">
+              <article>
+                <h3>Openclassrooms</h3>
+                <h4>Junior web developer</h4>
+                <p>Luxembourg, 2020</p>
+                <p>To prepare for my career change, I signed up for the web developer path on Openclassrooms to be able to educate myself while still working full-time.</p>
+              </article>
+              <article>
+                <h3>Université libre de Bruxelles</h3>
+                <h4>Psychological sciences</h4>
+                <p>Brussels, 2015 - 2017</p>
+                <p>I started studying psychology, where I learned a lot about human and animal behaviour, until I found myself reading more books about physics and making music than studying the science for which I actually was at university.</p>
+              </article>
+              <article>
+                <h3>Atert-Lycée Reiden</h3>
+                <h4>Commercial and administrative stream</h4>
+                <p>Luxembourg, 2008 - 2015</p>
+                <p>Before having dived into science and tech, I wanted to concentrate on learning the languages, which were the most present in the commercial and administrative stream. The realm in which I’m currently working.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+        <div id="work" class="container" style="display: none;">
+          <div>
+            <section class='container-details'>
+              <article>
+                <h3>Voyages Unsen</h3>
+                <h4>Accountant</h4>
+                <p>Luxembourg, 2019 - present</p>
+                <p>Currently working as an accountant in a bus and travel agency, where I’m learning to pay attention to details and stimulating my analytical thinking. Something that’s often neglected in such jobs is the ability to communicate properly with colleagues, a skill that I definitely have.</p>
+              </article>
+              <article>
+                <h3>Post Luxembourg</h3>
+                <h4>Counter agent</h4>
+                <p>Luxembourg, 2018 - 2019</p>
+                <p>Helping more than 100 customers a day in different offices leaves one with a strong ability to communicate with foreign people and staying comfortable towards the client. Another skill acquired during this year was the capability to fulfill the clients requirements and solve his problems in the shortest amount of time.</p>
+              </article>
+              <article>
+                <h3>BGL BNP Paribas</h3>
+                <h4>Various internships</h4>
+                <p>Luxembourg, 2014 - 2015</p>
+                <p>I had a lot of short internships and holiday jobs in a bank office where I learned very early about the customer - employee relationship. That was the perfect possibility to get in touch with the job market and socialize with my first work colleagues.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript">
+      function toggleEducation() {
+        if (document.getElementById('work').style.display === "block") {
+          document.getElementById('work').style.display = "none";
+          document.getElementById('education').style.display = "block";
+        }
+      }
 
+      function toggleWork() {
+        if (document.getElementById('education').style.display === "block") {
+          document.getElementById('education').style.display = "none";
+          document.getElementById('work').style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
