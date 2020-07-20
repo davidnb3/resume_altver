@@ -58,11 +58,14 @@
         color: #ECE8E8;
         background: #2D2D2D;
         font-weight: 500;
-        margin: 55px -20px 40px -20px;
+        margin: 55px -20px 60px -20px;
         text-transform: uppercase; }
+        aside section:first-of-type p {
+          line-height: 18px;
+        }
   
   .contact-details {
-    margin-top: 40px;
+    margin-top: 60px;
     font-weight: bold;
     line-height: 30px; }
     .contact-details ul {
@@ -122,6 +125,10 @@
       font-size: 0.9em; }
       main article * {
         margin-bottom: 5px; }
+        main article ul li {
+          line-height: 13px;
+          list-style: none;
+        }
   
   .flex-container {
     display: flex;
